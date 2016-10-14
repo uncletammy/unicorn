@@ -112,7 +112,7 @@ theModule.uiArray = function (factoryId, definition) {
 
         if (!matchingNewItem) return;
 
-        angular.extend(existingItem, potentialMatchingItem);
+        angular.extend(existingItem, matchingNewItem);
       });
 
       // Examine provided items- for any new ones, push them onto self
